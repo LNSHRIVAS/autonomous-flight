@@ -1,0 +1,26 @@
+Abstract
+
+Obtaining accurate depth measurements out of a single image 
+represents a fascinating solution to 3D sensing.
+CNNs led to considerable improvements in this field, and
+recent trends replaced the need for ground-truth labels with
+geometry-guided image reconstruction signals enabling unsupervised training. 
+Currently, for this purpose, state-ofthe-art techniques rely on images acquired with a binocular
+stereo rig to predict inverse depth (i.e., disparity) according 
+to the aforementioned supervision principle. However,
+these methods suffer from well-known problems near occlusions, 
+left image border, etc inherited from the stereo setup.
+Therefore, in this paper, we tackle these issues by moving to
+a trinocular domain for training. Assuming the central image as 
+the reference, we train a CNN to infer disparity representations 
+pairing such image with frames on its left and
+right side. This strategy allows obtaining depth maps not
+affected by typical stereo artifacts. Moreover, being trinocular 
+datasets seldom available, we introduce a novel interleaved 
+training procedure enabling to enforce the trinocular
+assumption outlined from current binocular datasets. 
+Exhaustive experimental results on the KITTI dataset confirm
+that our proposal outperforms state-of-the-art methods for
+unsupervised monocular depth estimation trained on binocular 
+stereo pairs as well as any known methods relying on
+other cues.

@@ -1,0 +1,18 @@
+Abstract
+
+Despite learning based methods showing promising results in single view depth estimation and visual odometry,
+most existing approaches treat the tasks in a supervised
+manner. Recent approaches to single view depth estimation explore the possibility of learning without full supervision via minimizing photometric error. In this paper, we
+explore the use of stereo sequences for learning depth and
+visual odometry. The use of stereo sequences enables the
+use of both spatial (between left-right pairs) and temporal
+(forward backward) photometric warp error, and constrains
+the scene depth and camera motion to be in a common, realworld scale. At test time our framework is able to estimate
+single view depth and two-view odometry from a monocular sequence. We also show how we can improve on a standard photometric warp loss by considering a warp of deep
+features. We show through extensive experiments that: (i)
+jointly training for single view depth and visual odometry
+improves depth prediction because of the additional constraint imposed on depths and achieves competitive results
+for visual odometry; (ii) deep feature-based warping loss
+improves upon simple photometric warp loss for both single view depth estimation and visual odometry. Our method
+outperforms existing learning based methods on the KITTI
+driving dataset in both tasks.
