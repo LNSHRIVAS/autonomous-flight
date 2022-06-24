@@ -1,0 +1,22 @@
+Abstract
+
+Depth information is important for autonomous
+systems to perceive environments and estimate their own state.
+Traditional depth estimation methods, like structure from motion
+and stereo vision matching, are built on feature correspondences
+of multiple viewpoints. Meanwhile, the predicted depth maps
+are sparse. Inferring depth information from a single image
+(monocular depth estimation) is an ill-posed problem. With the
+rapid development of deep neural networks, monocular depth estimation based on deep learning has been widely studied recently
+and achieved promising performance in accuracy. Meanwhile,
+dense depth maps are estimated from single images by deep
+neural networks in an end-to-end manner. In order to improve
+the accuracy of depth estimation, different kinds of network
+frameworks, loss functions and training strategies are proposed
+subsequently. Therefore, we survey the current monocular depth
+estimation methods based on deep learning in this review.
+Initially, we conclude several widely used datasets and evaluation
+indicators in deep learning-based depth estimation. Furthermore,
+we review some representative existing methods according to
+different training manners supervised, unsupervised and semisupervised. Finally, we discuss the challenges and provide some
+ideas for future researches in monocular depth estimation.

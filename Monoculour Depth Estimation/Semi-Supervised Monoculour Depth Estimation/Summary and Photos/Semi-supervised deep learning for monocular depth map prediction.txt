@@ -1,0 +1,12 @@
+Abstract
+
+Supervised deep learning often suffers from the lack of
+sufficient training data. Specifically in the context of monocular depth map prediction, it is barely possible to determine dense ground truth depth images in realistic dynamic
+outdoor environments. When using LiDAR sensors, for instance, noise is present in the distance measurements, the
+calibration between sensors cannot be perfect, and the measurements are typically much sparser than the camera images. In this paper, we propose a novel approach to depth
+map prediction from monocular images that learns in a
+semi-supervised way. While we use sparse ground-truth
+depth for supervised learning, we also enforce our deep
+network to produce photoconsistent dense depth maps in a
+stereo setup using a direct image alignment loss. In experiments we demonstrate superior performance in depth map
+prediction from single images compared to the state-of-theart methods

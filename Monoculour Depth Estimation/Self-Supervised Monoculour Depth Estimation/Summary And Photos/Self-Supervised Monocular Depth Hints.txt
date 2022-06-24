@@ -1,0 +1,13 @@
+Abstract
+
+Monocular depth estimators can be trained with various forms of 
+self-supervision from binocular-stereo data to circumvent the 
+need for high-quality laser-scans or other ground-truth data. 
+The disadvantage, however, is that the photometric reprojection 
+losses used with self-supervised learning typically have multiple 
+local minima. These plausible-looking alternatives to ground-truth 
+can restrict what a regression network learns, causing it to 
+predict depth maps of limited quality. 
+As one prominent example, depth discontinuities around thin 
+structures are often incorrectly estimated by current 
+state-of-the-art methods.

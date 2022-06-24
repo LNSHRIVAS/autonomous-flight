@@ -1,0 +1,21 @@
+Abstract
+
+Self-supervised monocular depth estimation presents a powerful 
+method to obtain 3D scene information from single camera images, 
+which is trainable on arbitrary image sequences without requiring 
+depth labels, e.g., from a LiDAR sensor. 
+In this work we present a new self-supervised semantically-guided 
+depth estimation (SGDepth) method to deal with moving 
+dynamic-class (DC) objects, such as moving cars and pedestrians, 
+which violate the static-world assumptions typically made during 
+training of such models. Specifically, we propose 
+(i) mutually beneficial cross-domain training of (supervised) 
+semantic segmentation and self-supervised depth estimation with 
+task-specific network heads, 
+(ii) a semantic masking scheme providing guidance to prevent 
+moving DC objects from contaminating the photometric loss, and 
+(iii) a detection method for frames with non-moving DC objects, 
+from which the depth of DC objects can be learned. 
+We demonstrate the performance of our method on several benchmarks,
+in particular on the Eigen split, where we exceed all baselines 
+without test-time refinement.
