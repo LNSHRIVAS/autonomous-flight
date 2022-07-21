@@ -1,0 +1,11 @@
+
+2015
+
+[1] proposes a training framework that trains a neural networt without ground truth images, they take in use of epipolar geometry constraints. By image reconstruction loss they generate disparity images, and contributes a end to end unsupervised monocular depth estimation with a novel training loss.Their fully connnected architecture is based on dispnet[3] with several modifications, their defined losses are Appearence Matching Loss, Disparity Smoothness Loss, Left-Right Disparity Consistency Loss. 
+
+
+[1] C. Godard, O. M. Aodha and G. J. Brostow, "Unsupervised Monocular Depth Estimation with Left-Right Consistency," 2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017, pp. 6602-6611, doi: 10.1109/CVPR.2017.699.
+
+[2] Wei Zhang, Quanbing Zhang, Lei Qu and Sui Wei, "A stereo matching algorithm based on multiresolution and epipolar constraint," Third International Conference on Image and Graphics (ICIG'04), 2004, pp. 180-183, doi: 10.1109/ICIG.2004.25.
+
+[3] N. Mayer et al., "A Large Dataset to Train Convolutional Networks for Disparity, Optical Flow, and Scene Flow Estimation," 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016, pp. 4040-4048, doi: 10.1109/CVPR.2016.438.
