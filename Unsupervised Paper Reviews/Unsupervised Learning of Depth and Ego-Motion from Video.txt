@@ -1,0 +1,58 @@
+Unsupervised Learning of Depth and Ego-Motion from Video
+
+
+[1]. Proposes unsupervised learning framework for monocular depth and camera motion estimation
+from unlabeled video sequences. Along with recent work [2, 3, 4], an end-to-end learning approach with view synthesis as the supervisory signal is used. In
+contrast to the previous work, this method is completely unsupervised, requiring only monocular video sequences for training. This method uses single-view depth and multiview pose networks, with a loss. The loss is based on warping nearby views with target using computed depth and pose. The
+networks are then merged with the loss during training, and it can be applied independently during test time.
+
+System is trained on the split provided by [5], all the frames from the testing scenes and static sequences are excluded with MOF (mean optical flow) magnitude less than 1 pixel for training.
+The length of image sequences are fixed to be 3 frames, the central frame is treated as the target view and the ±1 frames as the source views.
+
+The length of input image sequences to their system is fixed to 5 frames. 
+To resolve scale ambiguity during evaluation, first 
+the scaling factor for the predictions made by ORB-SLAM [6] (full), ORB-SLAM
+(short) and  dataset mean of car motion to best align with the ground truth is optimized, and then the Absolute Trajectory Error (ATE) [7] is measured as the metric. ATE is computed on 5-frame snippets and average is taken over the full sequence.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.  Zhou, Tinghui, et al. "Unsupervised learning of depth and ego-motion from video." Proceedings of the IEEE conference on computer vision and pattern recognition. 2017.
+
+2.  J. Flynn, I. Neulander, J. Philbin, and N. Snavely. DeepStereo: Learning to predict new views from the world’s imagery. In Computer Vision and Pattern Recognition, 2016.
+
+3.  R. Garg, V. K. BG, G. Carneiro, and I. Reid. Unsupervised
+CNN for single view depth estimation: Geometry to the rescue. In European Conf. Computer Vision, 2016.
+
+4.  C. Godard, O. Mac Aodha, and G. J. Brostow. Unsupervised monocular depth estimation with lef-right
+consistency. In Computer Vision and Pattern Recognition, 2017.
+
+5.  D. Eigen, C. Puhrsch, and R. Fergus. Depth map prediction from a single image using a multi-scale deep network. In Advances in Neural Information Processing Systems, 2014.
+
+6. R. Mur-Artal, J. M. M. Montiel, and J. D. Tardos. ORBSLAM: a versatile and accurate monocular SLAM system.
+IEEE Transactions on Robotics, 31(5), 2015.
+
+7.  P. E. Debevec, C. J. Taylor, and J. Malik. Modeling and rendering architecture from photographs: A hybrid geometryand image-based approach. In Proceedings of the 23rd annual conference on Computer graphics and interactive techniques, pages 11–20. ACM, 1996.
