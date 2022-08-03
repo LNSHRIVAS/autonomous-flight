@@ -1,0 +1,18 @@
+[1] propose a dual CNN based model for generating disparity maps with 6 losses, they also extends the model with 12 losses by utilizing the cross diparities. This models DNM6 and DNM12 are experimented over the KITTI driving and cityscapes dataset.The DNM6 model demonstrated two cnn layers one for each left and right images in stereo vision, this model is based on auto-encoder alogrithm which is taken from [2] Gordan et al. In DNM12 architechture left and right disparity is independently predicted, four bilinear samplers is being used for constructing two images from left cnn and two images from right cnn.The DNM12 model outperfoms the [2]left-right consistency method.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2]. C. Godard, O. M. Aodha and G. J. Brostow, "Unsupervised Monocular Depth Estimation with Left-Right Consistency," 2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2017, pp. 6602-6611, doi: 10.1109/CVPR.2017.699.  

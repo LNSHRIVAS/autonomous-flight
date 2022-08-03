@@ -1,0 +1,5 @@
+Epipole is the image point of origin/pinhole of one camera as viewed by the other camera.
+
+el and er are the epipolesd.
+
+el and er are unique for a given stereo pair.

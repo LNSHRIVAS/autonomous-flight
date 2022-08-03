@@ -1,0 +1,35 @@
+In recent years CNN's have show significant accurate depth estimation from a single image[1], previous years work have taken use of geometric structures and their relationship to calculate depth in an image [2]. An extreme challenge in estimating depth and making a neural network learn is the traning datasets, this dataset are costly to collect with ground truth. we mainly review supervised methods, semi-supervised and unsupervised methods, for training this methods rely on ground truth images or stereo pair images (left and right). After training this methods would be able to predict depth information from single images. 
+
+
+
+
+
+Supervised monocular depth estimation methods
+
+This method is a regression type problem[3] because we have to predict real values for depth estimation, this method take in use of ground truth images. The loss we consider as the difference between the predicted maps and the real depth maps l2 loss, this way depth networks learn to predict information from the scene by utilizing the ground truth values. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1] Godard, Clément, et al. "Digging into self-supervised monocular depth estimation." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2019.
+[2] D. Hoiem, A. A. Efros, and M. Hebert, “Automatic photo pop-up,” in ACM SIGGRAPH 2005 Papers, 2005, pp. 577–584.
+kdje
+[3] D. Eigen, C. Puhrsch, and R. Fergus, “Depth map prediction from a single image using a multi-scale deep network,” in Advances in neural information processing systems, 2014, pp. 2366–2374.
