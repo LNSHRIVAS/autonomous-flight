@@ -26,6 +26,8 @@ To run the code and explore the project, follow the instructions provided in eac
 
 ## Documentation and Reports
 
+![image](https://github.com/LNSHRIVAS/autonomous-flight/assets/76100357/e85c8162-e868-40a3-bdf2-5876999caa42)
+
 For a comprehensive understanding of the project, please refer to the following documents:
 
 - **19EC071_Lakshminarayan_shrivas_EC456_Summer Internship - II (3).docx**: This document provides detailed documentation and insights into the project, its objectives, methodologies, and outcomes.
