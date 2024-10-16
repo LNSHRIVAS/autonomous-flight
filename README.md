@@ -34,9 +34,6 @@ For a comprehensive understanding of the project, please refer to the following 
 
 - **19EC071_Lakshminarayan_shrivas_EC456_Summer Internship - II -temp.pptx**: This PowerPoint presentation gives a summarized overview of the project, highlighting key aspects and findings.
 
-## Contributors
-
-- [Lakshminarayan Shrivas]: Main contributor and researcher.
 
 ## License
 
